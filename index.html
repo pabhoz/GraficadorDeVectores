@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Intro a gráficos 3D</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./vendors/three.js-master/build/three.min.js"></script>
+        <script src="./libs/controls/OrbitControls.js"></script>
+        <script src="./src/main.js"></script>
+    </head>
+    <body onload="startApp()">
+        <div class="gui">
+            <div class="vector">
+                <span>Vector U = </span>
+                <input name="x" data-vector="U" placeholder="x" type="number">
+                <input name="y" data-vector="U" placeholder="y" type="number">
+                <input name="z" data-vector="U" placeholder="z" type="number">
+            </div>
+            <div class="vector">
+                <span>Vector V = </span>
+                <input name="x" data-vector="V" placeholder="x" type="number">
+                <input name="y" data-vector="V" placeholder="y" type="number">
+                <input name="z" data-vector="V" placeholder="z" type="number">
+            </div>
+            <div class="coolButton" onclick="graficar()">Graficar!</div>
+        </div>
+        <canvas id="app"></canvas>
+    </body>
+</html>
